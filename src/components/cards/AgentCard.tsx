@@ -4,6 +4,8 @@ import { Badge } from "../ui/badge";
 import {IAgent } from "@/types/agent.type";
 import { cn } from "@/lib/utils";
 import { getStatusColor } from "@/utils/helper";
+import { motion } from "motion/react"
+import AgentCardContainer from "../container/AgentCardContainer";
 interface IProps {
   agent: IAgent;
 }
@@ -16,16 +18,11 @@ function AgentCard({ agent }: IProps) {
     .slice(0, 2)
     .join("");
   
-   enum EAgentStatus {
-  ACTIVE = 'Active',
-  BETA = 'Beta',
-  ARCHIVED = 'Archived'
-}
-
-
+   
 
   return (
-    <Card className="p-6 gap-3 relative">
+  <AgentCardContainer>
+      < Card className="p-6 gap-3 relative hover:cursor-pointer">
       <Badge className=" bg-secondary rounded-full px-2 py-1  absolute right-1 top-1">
         {agent.category}
       </Badge>
@@ -57,6 +54,7 @@ function AgentCard({ agent }: IProps) {
         </span>
       </div>
     </Card>
+  </AgentCardContainer>
   );
 }
 

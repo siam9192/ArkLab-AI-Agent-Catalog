@@ -84,5 +84,87 @@
     "status": "Active",
     "category": "Customer Service",
     "pricingModel": "Subscription"
+  },
+  {
+    "id": "agent-011",
+    "name": "SupportBot",
+    "description": "Automates responses to customer service tickets and FAQs.",
+    "status": "Beta",
+    "category": "Customer Service",
+    "pricingModel": "Free Tier"
+  },
+  {
+    "id": "agent-012",
+    "name": "Marketing Assistant",
+    "description": "Generates marketing copy and content ideas for social media campaigns.",
+    "status": "Active",
+    "category": "Marketing",
+    "pricingModel": "Subscription"
+  },
+  {
+    "id": "agent-013",
+    "name": "Sales Insight AI",
+    "description": "Analyzes sales data and customer behavior to predict future opportunities.",
+    "status": "Archived",
+    "category": "Marketing",
+    "pricingModel": "Per-Use"
+  },
+  {
+    "id": "agent-014",
+    "name": "CodeReviewer GPT",
+    "description": "Automatically reviews code for bugs, style issues, and best practices.",
+    "status": "Active",
+    "category": "Development",
+    "pricingModel": "Free Tier"
+  },
+  {
+    "id": "agent-015",
+    "name": "DevOps Advisor",
+    "description": "Suggests improvements to infrastructure and CI/CD pipelines.",
+    "status": "Beta",
+    "category": "Development",
+    "pricingModel": "Subscription"
+  },
+  {
+    "id": "agent-016",
+    "name": "UX Feedback Analyzer",
+    "description": "Processes UX session recordings and feedback to highlight design pain points.",
+    "status": "Active",
+    "category": "Customer Service",
+    "pricingModel": "Subscription"
+  },
+  {
+    "id": "agent-017",
+    "name": "TrendSpotter AI",
+    "description": "Finds emerging trends in your industry using social data and competitor analysis.",
+    "status": "Beta",
+    "category": "Marketing",
+    "pricingModel": "Per-Use"
+  },
+  {
+    "id": "agent-018",
+    "name": "Test Automation Assistant",
+    "description": "Helps developers generate and maintain test cases for applications.",
+    "status": "Active",
+    "category": "Development",
+    "pricingModel": "Free Tier"
+  },
+  {
+    "id": "agent-019",
+    "name": "Customer Journey Mapper",
+    "description": "Visualizes and analyzes customer journeys to improve experience and conversions.",
+    "status": "Archived",
+    "category": "Customer Service",
+    "pricingModel": "Subscription"
+  },
+  {
+    "id": "agent-020",
+    "name": "Content Optimizer",
+    "description": "Analyzes and optimizes blog or website content for readability and SEO.",
+    "status": "Active",
+    "category": "Marketing",
+    "pricingModel": "Free Tier"
   }
+
+
 ]
