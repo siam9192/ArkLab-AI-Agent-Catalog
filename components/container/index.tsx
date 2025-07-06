@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 interface IProps {
-  
+  children:ReactNode
 }
-function index() {
+function Container({children}:IProps) {
   return (
-    <div></div>
+    <div className='max-w-7xl mx-auto'>
+      {
+        children
+      }
+    </div>
   )
 }
 
-export default index
+export default Container

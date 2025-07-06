@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -44,6 +46,7 @@
 }
 
 :root {
+  /* Color */
   --primary-color:rgb(67, 0, 255);
   --secondary-color:rgb(9, 63, 180);
   --warning-color:rgb(255, 0, 96);
@@ -52,6 +55,9 @@
   --text-color-secondary: #555555;
   --text-color-muted: #888888;
   --text-on-primary: #ffffff;
+  /* Fonts */
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Open Sans", sans-serif;
 
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -128,4 +134,33 @@
   body {
     @apply bg-background text-foreground;
   }
+
+}
+
+:root {
+  --primary-color:rgb(67, 0, 255);
+  --secondary-color:rgb(9, 63, 180);
+  --warning-color:rgb(255, 0, 96);
+  --info-color:rgb(3, 166, 161);
+  --text-color-primary: #1a1a1a;
+  --text-color-secondary: #555555;
+  --text-color-muted: #888888;
+  --text-on-primary: #ffffff;
+  /* Fonts */
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Open Sans", sans-serif;
+}
+@theme {
+  --color-primary:var(--primary-color);
+  --color-secondary:var(--secondary-color);
+  --color-info:var(--info-color);
+  --warning-color:var(--warning-color);
+  --font-primary: var(--font-primary);
+  --font-secondary:var(--font-secondary);
+  --font-unique:"Pacifico", "cursive";
+}
+
+
+body {
+  font-family: var(--font-primary);
 }
