@@ -9,11 +9,5 @@ type TProvider = {
 };
 
 export default function Provider({ children }: TProvider) {
-
-
-  return (
-    <ReactRedux.Provider store={store}>
-          {children}
-    </ReactRedux.Provider>
-  );
+  return <ReactRedux.Provider store={store}>{children}</ReactRedux.Provider>;
 }
