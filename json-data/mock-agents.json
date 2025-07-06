@@ -3,6 +3,7 @@
     "id": "agent-001",
     "name": "Intelligent Chatbot Pro",
     "description": "An advanced AI chatbot for enhanced customer support and query resolution.",
+    "iconUrl":"https://t4.ftcdn.net/jpg/03/97/02/07/360_F_397020794_LXE0WLqWxcbhIf2UwXfRtLJwjw8aX5Wj.jpg",
     "status": "Active",
     "category": "Customer Service",
     "pricingModel": "Subscription"
@@ -11,6 +12,7 @@
     "id": "agent-002",
     "name": "Voice Assistant X",
     "description": "Next-generation voice automation for internal operations and data retrieval.",
+    "iconUrl":"https://t4.ftcdn.net/jpg/03/97/02/07/360_F_397020794_LXE0WLqWxcbhIf2UwXfRtLJwjw8aX5Wj.jpg",
     "status": "Beta",
     "category": "Operations",
     "pricingModel": "Per-Use"
@@ -27,6 +29,7 @@
     "id": "agent-004",
     "name": "Data Analyst Agent",
     "description": "An autonomous AI agent designed to automate data analysis and report generation.",
+    "iconUrl":"https://t4.ftcdn.net/jpg/03/97/02/07/360_F_397020794_LXE0WLqWxcbhIf2UwXfRtLJwjw8aX5Wj.jpg",
     "status": "Archived",
     "category": "Data Analysis",
     "pricingModel": "Free Tier"
@@ -43,6 +46,7 @@
     "id": "agent-006",
     "name": "HR Onboarding Bot",
     "description": "Automates the new employee onboarding process, answering FAQs and guiding through tasks.",
+    "iconUrl":"https://t4.ftcdn.net/jpg/03/97/02/07/360_F_397020794_LXE0WLqWxcbhIf2UwXfRtLJwjw8aX5Wj.jpg",
     "status": "Active",
     "category": "Human Resources",
     "pricingModel": "Subscription"
@@ -59,6 +63,7 @@
     "id": "agent-008",
     "name": "Financial Advisor AI",
     "description": "Provides personalized financial advice and investment insights.",
+    "iconUrl":"https://t4.ftcdn.net/jpg/03/97/02/07/360_F_397020794_LXE0WLqWxcbhIf2UwXfRtLJwjw8aX5Wj.jpg",
     "status": "Beta",
     "category": "Finance",
     "pricingModel": "Per-Use"
@@ -67,6 +72,7 @@
     "id": "agent-009",
     "name": "Legal Document Drafter",
     "description": "Assists in drafting legal documents and contracts with AI accuracy.",
+    "iconUrl":"https://t4.ftcdn.net/jpg/03/97/02/07/360_F_397020794_LXE0WLqWxcbhIf2UwXfRtLJwjw8aX5Wj.jpg",
     "status": "Archived",
     "category": "Legal",
     "pricingModel": "Per-Use"

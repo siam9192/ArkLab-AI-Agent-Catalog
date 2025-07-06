@@ -2,6 +2,7 @@ export interface IAgent {
   id: string;
   name: string;
   description: string;
+  iconUrl?: string;
   status: EAgentStatus;
   category: string;
   pricingModel: EAgentPricingModel;

@@ -1,30 +1,59 @@
 import React from "react";
-import { Card, CardAction, CardDescription, CardTitle } from "@/components/ui/card";
+import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 import { Badge } from "../ui/badge";
+import {IAgent } from "@/types/agent.type";
+import { cn } from "@/lib/utils";
+import { getStatusColor } from "@/utils/helper";
+interface IProps {
+  agent: IAgent;
+}
+function AgentCard({ agent }: IProps) {
+  const { name, iconUrl,description,status,pricingModel } = agent;
+  const fallbackValue = name
+    .trim()
+    .split(/\s+/)
+    .map((word) => word[0]?.toUpperCase() || "")
+    .slice(0, 2)
+    .join("");
+  
+   enum EAgentStatus {
+  ACTIVE = 'Active',
+  BETA = 'Beta',
+  ARCHIVED = 'Archived'
+}
 
-function AgentCard() {
+
+
   return (
     <Card className="p-6 gap-3 relative">
       <Badge className=" bg-secondary rounded-full px-2 py-1  absolute right-1 top-1">
-        Customer Service
+        {agent.category}
       </Badge>
       <div className="flex items-center gap-2">
-        {/* <img src={"https://media.istockphoto.com/id/2058507417/vector/artificial-intelligence-icon-sign-logo-in-the-circuit-line-style-ai-processor-vector-icon.jpg?s=612x612&w=0&k=20&c=0kb5zgMcapsLizKDzLP-Y72UyyVACOy2cEZC8hNIboE="} className="size-12 rounded-full object-cover" /> */}
-        <div className="size-10 text-lg rounded-full bg-blue-100 flex items-center justify-center text-blue-800 font-semibold">
-          CGX
-        </div>
-        <CardTitle className="text-xl  text-primary-text">Intelligent Chatbot Pro</CardTitle>
+        {iconUrl ? (
+          <img
+            src={
+              iconUrl
+            }
+            className="size-12 rounded-full object-cover"
+          />
+        ) : (
+          <div className="size-10 text-lg rounded-full bg-blue-100 flex items-center justify-center text-blue-800 font-semibold">
+            {fallbackValue}
+          </div>
+        )}
+
+        <CardTitle className="text-xl  text-primary-text">{name}</CardTitle>
       </div>
 
       <CardDescription>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laudantium corporis eum
-        iure modi asperiores voluptatibus eligendi culpa odit assumenda?
+      {description}
       </CardDescription>
 
       <div className="flex flex-wrap gap-2 text-sm mt-2">
-        <span className="px-2 py-1 rounded-full bg-green-100 font-medium">Active</span>
-        <span className="px-2 py-1 rounded-full bg-blue-100 text-blue-800 font-medium">
-          Free tier
+        <span className={cn("px-2 py-1 rounded-full",getStatusColor(status))}>{status}</span>
+        <span className=" px-2 py-1 rounded-full bg-blue-100 text-blue-800 font-medium">
+       {pricingModel}
         </span>
       </div>
     </Card>
