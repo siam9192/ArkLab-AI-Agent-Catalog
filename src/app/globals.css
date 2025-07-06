@@ -146,10 +146,10 @@
   --font-primary: var(--font-primary);
   --font-secondary:var(--font-secondary);
   --font-unique:"Pacifico", "cursive";
-  --color-text-primary:var(--text-color-primary);
-  --color-text-secondary: var(--text-color-secondary);
-  --color-text-muted: var(--text-color-muted);
-  ---color-text-on-primary:var( --text-on-primary);
+  --color-primary-text:var(--text-color-primary);
+  --color-secondary-text: var(--text-color-secondary);
+  --color-text-muted-text: var(--text-color-muted);
+  --color-on-primary-text:var( --text-on-primary);
 }
 /* 
 

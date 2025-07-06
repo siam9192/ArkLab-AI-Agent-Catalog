@@ -26,8 +26,8 @@ function Header() {
           <div className="flex items-center gap-2 ">
             <DropdownMenu>
               <DropdownMenuTrigger>
-                <Avatar   className=" size-12 outline-2 outline-primary outline-offset-1">
-                  <AvatarImage  src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D" />
+                <Avatar className=" size-12 outline-2 outline-primary outline-offset-1">
+                  <AvatarImage src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D" />
                   <AvatarFallback>A</AvatarFallback>
                 </Avatar>
               </DropdownMenuTrigger>
@@ -40,8 +40,8 @@ function Header() {
                 <DropdownMenuItem>
                   <Settings className="size-5 text-text-primary mr-2" /> Logout
                 </DropdownMenuItem>
-                <DropdownMenuItem variant="destructive" >
-                  <LogOut className="size-5 text-text-primary mr-2"/> Logout
+                <DropdownMenuItem variant="destructive">
+                  <LogOut className="size-5 text-text-primary mr-2" /> Logout
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
