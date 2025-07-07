@@ -10,7 +10,7 @@ async function Listings({ agents }: IProps) {
   return (
     <div>
       {/*  Display no result message on empty filtered agents */}
-      {filterListing.length === 0 ? (
+      {agents.length === 0 ? (
         <div className="mt-10 overflow-hidden">
           <img src="/no-result.jpg" alt="" className="md:w-1/3 mx-auto" />
           <div className="text-center">

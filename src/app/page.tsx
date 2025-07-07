@@ -37,7 +37,7 @@ async function HomePage({ searchParams }: IProps) {
       <div className="py-10 min-h-[90vh]">
         <ListingFilterBox />
         <Suspense fallback={<ListingLoading />}>
-          <Listings agents={agents} />
+          <Listings agents={filteredAgents} />
         </Suspense>
       </div>
     </>

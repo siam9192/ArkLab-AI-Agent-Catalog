@@ -17,5 +17,5 @@ export enum EAgentStatus {
 export enum EAgentPricingModel {
   FREE_TIER = "Free Tier",
   SUBSCRIPTION = "Subscription",
-  PER_USE = "Per Use",
+  PER_USE = "Per-Use",
 }
