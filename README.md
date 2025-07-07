@@ -17,7 +17,7 @@
 ## 🛠️ Tech Stack
 
 - Next.js 14 (App Router)
-- Tailwind CSS, ShadCN UI
+- Tailwind CSS, ShadCN UI,Framer Motion
 - Redux
 - NextAuth (for Google OAuth )
 - TypeScript
@@ -31,6 +31,7 @@
 ```bash
 git clone https://github.com/siam9192/ArkLab-AI-Agent-Catalog.git)
 cd ArkLab-AI-Agent-Catalog-main
+npm install
 ```
 
 ### 3. Create a .env file
@@ -41,8 +42,8 @@ Fill in the environment variables as needed. For Google OAuth:
 ```bash
 GOOGLE_CLIENT_ID=your-google-client-id
 GOOGLE_CLIENT_SECRET=your-google-client-secret
-NEXTAUTH_URL=http://localhost:3000
-NEXTAUTH_SECRET=your-random-secret
+NEXT_AUTH_URL=http://localhost:3000
+NEXT_AUTH_SECRET=your-random-secret
 ```
 
 ### 4. Run the development server
@@ -59,12 +60,12 @@ Used next-auth provider with mock Google credentials (for local testing).
 
 - Created an /api/auth page to handle sign-in.
 
-- Added session-aware route protection to certain pages.
+- Added session-aware route protection to certain page.
 
 ### ⚠️ Challenges Faced:
 
 Ensuring OAuth works on both development and Vercel environments.
-Handling async session loading and fallback UI.
+
 
 ### 📌 Key Design Decisions
 - App Router was used for improved file-based routing and metadata.
