@@ -8,21 +8,24 @@ interface IProps {
 }
 async function Listings({ searchParams }: IProps) {
   const agents = await getAgents(); // Fetch all agents from JSON file
-  await delay(); // Optional delay for simulating loading
+  await delay(2000); // Optional delay for simulating loading
   const filteredAgents = filterListing(agents, searchParams);
 
   // Display no result message on empty filtered agents
-  if(filteredAgents.length === 0){
-  return <div className="mt-10">
-    <img src="/no-result.jpg" alt="" className="md:w-1/3 mx-auto" />
-    <div className="text-center">
-  <p className="font-semibold text-2xl">No results found</p>
-  <p className="text-gray-600 mt-2">
-    We couldn't find any AI agents matching your search or filters.<br />
-    Try adjusting your keywords or selecting different filters.
-  </p>
-</div>
-  </div>
+  if (filteredAgents.length === 0) {
+    return (
+      <div className="mt-10">
+        <img src="/no-result.jpg" alt="" className="md:w-1/3 mx-auto" />
+        <div className="text-center">
+          <p className="font-semibold text-2xl">No results found</p>
+          <p className="text-gray-600 mt-2">
+            We couldn't find any AI agents matching your search or filters.
+            <br />
+            Try adjusting your keywords or selecting different filters.
+          </p>
+        </div>
+      </div>
+    );
   }
 
   return (

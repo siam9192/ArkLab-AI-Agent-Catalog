@@ -3,7 +3,7 @@ import { TSeachParams } from "@/types/util.type.";
 
 export async function delay(delay = 1000) {
   return await new Promise((resolve) => {
-    setTimeout(() => resolve(null), 1000);
+    setTimeout(() => resolve(null), delay);
   });
 }
 

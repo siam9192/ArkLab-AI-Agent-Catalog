@@ -32,17 +32,14 @@ function ListingFilterBox() {
   const [selectedPricingModel, setSelectedPricingModel] = useState("");
   const bouncedSearchQuery = useBounce(searchQuery); //Get search keyword with delay for better experience
 
-
   const router = useRouter();
-  
-  useEffect(()=>{
-    if(!bouncedSearchQuery){
-      return  router.push('/')
-    }
-    else return router.push(`/?search_query=${searchQuery}`)
-  },[bouncedSearchQuery])
 
-  
+  useEffect(() => {
+    if (!bouncedSearchQuery) {
+      return router.push("/");
+    } else return router.push(`/?search_query=${searchQuery}`);
+  }, [bouncedSearchQuery]);
+
   function handleCheckboxChange(
     checked: boolean | string,
     value: string,
@@ -97,8 +94,6 @@ function ListingFilterBox() {
     router.push(`?${queryStr}`);
   }
 
-
-
   function handelClear() {
     setSearchQuery("");
     setSelectedCategories([]);
@@ -129,7 +124,7 @@ function ListingFilterBox() {
                 name="search_query"
                 placeholder="Enter keyword.."
                 defaultValue={searchQuery}
-                onChange={(e)=>setSearchQuery(e.target.value)}
+                onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full  h-fit px-4 py-3 font-medium"
               />
               {/* Select categories */}

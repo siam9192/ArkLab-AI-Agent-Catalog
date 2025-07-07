@@ -5,6 +5,7 @@ import Header from "@/components/shared/Header";
 import Container from "@/components/container";
 import Provider from "@/components/provider/Provider";
 import AuthUi from "@/components/custom-ui/AuthUi";
+import Footer from "@/components/shared/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,11 +30,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-      <Provider>
-        <AuthUi/>
-       {/* <Header />
-        <Container>{children}</Container> */}
-      </Provider>
+        <Provider>
+          <Header />
+          <Container>{children}</Container>
+          <Footer/>
+        </Provider>
       </body>
     </html>
   );
