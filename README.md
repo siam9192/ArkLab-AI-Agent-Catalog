@@ -69,7 +69,7 @@ Handling async session loading and fallback UI.
 ### 📌 Key Design Decisions
 - App Router was used for improved file-based routing and metadata.
 
-- Dynamic filtering and search handled via client-side state management.
+- Dynamic filtering and search handled via search params.
 
 - Minimal UI with responsiveness in mind (custom + ShadCN components).
 
