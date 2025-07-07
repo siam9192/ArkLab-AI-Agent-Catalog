@@ -1,16 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+interface IUser
+  extends Partial<{
+    image: string;
+    name: string;
+    email: string;
+  }> {}
 
-
-interface IUser extends Partial<{
-    image:string
-    name:string,
-    email:string
-}
->
-{
-
-}
 interface IInitialState {
   isUserExist: boolean;
   user: IUser | null;
@@ -30,10 +26,10 @@ export const authSlice = createSlice({
       state.user = payload;
       state.isUserExist = true; //payload not null set true or set false
     },
-    resetUser:(state)=>{
-        state.user = null
-        state.isUserExist = false
-    }
+    resetUser: (state) => {
+      state.user = null;
+      state.isUserExist = false;
+    },
   },
 });
 

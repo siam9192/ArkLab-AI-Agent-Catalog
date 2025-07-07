@@ -11,11 +11,11 @@ function Header() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/">
-            <h1 className="text-4xl font-medium ">
-              <span className="text-primary   font-semibold">Ai</span>Hub
+            <h1 className=" text-2xl md:text-3xl font-medium ">
+              <span className="text-primary   font-semibold">Ai</span> Agent Catalog
             </h1>
           </Link>
-   <HeaderProfileDropdown/>
+          <HeaderProfileDropdown />
         </div>
       </Container>
     </header>

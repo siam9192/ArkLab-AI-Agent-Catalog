@@ -30,7 +30,7 @@ function ListingFilterBox() {
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [selectedStatus, setSelectedStatus] = useState<string[]>([]);
   const [selectedPricingModel, setSelectedPricingModel] = useState("");
-  const bouncedSearchQuery = useBounce(searchQuery); //Get search keyword with delay for better experience
+  const bouncedSearchQuery = useBounce(searchQuery, 100); //Get search keyword with delay for better experience
 
   const router = useRouter();
 
@@ -95,19 +95,31 @@ function ListingFilterBox() {
   }
 
   function handelClear() {
+    reset();
+    router.push("/");
+  }
+
+  function reset() {
     setSearchQuery("");
     setSelectedCategories([]);
     setSelectedStatus([]);
     setSelectedPricingModel("");
-    router.push("/");
   }
 
+  function handelSearchQuery(e: ChangeEvent<HTMLInputElement>) {
+    setSearchQuery(e.target.value);
+    setSelectedCategories([]);
+    setSelectedStatus([]);
+    setSelectedPricingModel("");
+  }
+  console.log(selectedCategories);
   return (
     <div className="px-5 py-2 bg-background shadow-sm rounded-md ">
       <h1 className="text-2xl font-medium  mb-3">Search Box</h1>
       <div className="py-5 flex  md:flex-row  flex-col lg:gap-0 gap-2 justify-between items-center">
         <Input
-          onChange={(e) => setSearchQuery(e.target.value)}
+          onChange={handelSearchQuery}
+          value={searchQuery}
           placeholder="Enter keyword.."
           className=" w-full lg:w-1/2 xl:w-1/3  h-fit px-4 py-3 font-medium"
         />
@@ -190,12 +202,23 @@ function ListingFilterBox() {
               {/* Buttons */}
               <div className="mt-5 flex justify-end items-center gap-2">
                 <DialogClose asChild>
-                  <Button onClick={handelClear} type="button" variant="outline" size="lg">
+                  <Button
+                    onClick={handelClear}
+                    type="button"
+                    variant="outline"
+                    size="lg"
+                    className="hover:cursor-pointer"
+                  >
                     Clear
                   </Button>
                 </DialogClose>
                 <DialogClose asChild>
-                  <Button type="button" onClick={handleSubmit} variant="default">
+                  <Button
+                    type="button"
+                    onClick={handleSubmit}
+                    variant="default"
+                    className="hover:cursor-pointer"
+                  >
                     Apply
                   </Button>
                 </DialogClose>

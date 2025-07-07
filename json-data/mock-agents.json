@@ -12,7 +12,7 @@
     "id": "agent-002",
     "name": "Voice Assistant X",
     "description": "Next-generation voice automation for internal operations and data retrieval.",
-    "iconUrl":"https://t4.ftcdn.net/jpg/03/97/02/07/360_F_397020794_LXE0WLqWxcbhIf2UwXfRtLJwjw8aX5Wj.jpg",
+    "iconUrl":"https://online.uc.edu/wp-content/uploads/2024/08/What-Is-AI-Featured.jpg",
     "status": "Beta",
     "category": "Operations",
     "pricingModel": "Per-Use"
@@ -46,7 +46,7 @@
     "id": "agent-006",
     "name": "HR Onboarding Bot",
     "description": "Automates the new employee onboarding process, answering FAQs and guiding through tasks.",
-    "iconUrl":"https://t4.ftcdn.net/jpg/03/97/02/07/360_F_397020794_LXE0WLqWxcbhIf2UwXfRtLJwjw8aX5Wj.jpg",
+    "iconUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfNbyX6HUTwrUMSK64Q4uwaDzkOx2aefFJEWD8Qnfa_G5b2PSxV41zVMJAT0gB8eoIVqk&usqp=CAU",
     "status": "Active",
     "category": "Human Resources",
     "pricingModel": "Subscription"
@@ -63,7 +63,7 @@
     "id": "agent-008",
     "name": "Financial Advisor AI",
     "description": "Provides personalized financial advice and investment insights.",
-    "iconUrl":"https://t4.ftcdn.net/jpg/03/97/02/07/360_F_397020794_LXE0WLqWxcbhIf2UwXfRtLJwjw8aX5Wj.jpg",
+    "iconUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi79SDplmqmisAolgXY3XSZ6t5NI1BZsIfVmfqKKHLM9PDQzdN9qq3s_rH66ZmDh7nQVk&usqp=CAU",
     "status": "Beta",
     "category": "Finance",
     "pricingModel": "Per-Use"
@@ -81,6 +81,7 @@
     "id": "agent-010",
     "name": "Customer Feedback Analyzer",
     "description": "Analyzes customer feedback from various channels to identify key sentiments and trends.",
+    "iconUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9EEyF7nQS8ekpx4fDNPMRgcpp-HRxd9VFhw&s",
     "status": "Active",
     "category": "Customer Service",
     "pricingModel": "Subscription"
@@ -105,6 +106,7 @@
     "id": "agent-013",
     "name": "Sales Insight AI",
     "description": "Analyzes sales data and customer behavior to predict future opportunities.",
+     "iconUrl":"https://cdn.prod.website-files.com/61845f7929f5aa517ebab941/6440f9477c2a321f0dd6ab61_How%20Artificial%20Intelligence%20(AI)%20Is%20Used%20In%20Biometrics.jpg",
     "status": "Archived",
     "category": "Marketing",
     "pricingModel": "Per-Use"
@@ -129,6 +131,7 @@
     "id": "agent-016",
     "name": "UX Feedback Analyzer",
     "description": "Processes UX session recordings and feedback to highlight design pain points.",
+    "iconUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgbaYfeyw7DYmvwWFz7HdZKSyB9WlgB6w47S92YpBb2O4aI-AB3v4Yo2pBoT8xVrjvq2A&usqp=CAU",
     "status": "Active",
     "category": "Customer Service",
     "pricingModel": "Subscription"
@@ -153,6 +156,7 @@
     "id": "agent-019",
     "name": "Customer Journey Mapper",
     "description": "Visualizes and analyzes customer journeys to improve experience and conversions.",
+    "iconUrl":"https://cdn.pixabay.com/photo/2023/09/12/16/55/ai-generated-8249225_1280.jpg",
     "status": "Archived",
     "category": "Customer Service",
     "pricingModel": "Subscription"
